@@ -1,0 +1,71 @@
+# Grokpi config — di-generate otomatis oleh GSTD Desktop
+# Jangan edit manual, akan ditimpa saat app restart
+
+[app]
+app_key = "GSTD_APP_KEY_PLACEHOLDER"
+media_generation_enabled = true
+temporary = true
+disable_memory = true
+stream = true
+thinking = false
+dynamic_statsig = true
+filter_tags = ["xaiartifact", "xai:tool_usage_card", "grok:render"]
+host = "127.0.0.1"
+port = 8080
+log_json = false
+log_level = "info"
+log_file_path = "GSTD_LOG_PATH_PLACEHOLDER"
+log_max_size_mb = 20
+log_max_backups = 2
+db_driver = "sqlite"
+db_path = "GSTD_DB_PATH_PLACEHOLDER"
+request_timeout = 300
+read_header_timeout = 10
+
+[image]
+nsfw = false
+blocked_parallel_attempts = 3
+blocked_parallel_enabled = true
+
+[proxy]
+base_proxy_url = ""
+enabled = false
+
+[retry]
+max_tokens = 5
+per_token_retries = 2
+reset_session_status_codes = [403]
+cooling_status_codes = [429]
+retry_backoff_base = 0.5
+retry_backoff_factor = 2.0
+retry_backoff_max = 20.0
+retry_budget = 300.0
+
+[token]
+fail_threshold = 5
+usage_flush_interval_sec = 30
+cool_check_interval_sec = 30
+basic_models = [
+    "grok-3", "grok-3-mini", "grok-3-thinking#4",
+    "grok-4", "grok-4-mini", "grok-4-thinking#4",
+    "grok-4.1-expert#4", "grok-4.1-fast", "grok-4.1-mini", "grok-4.1-thinking#4",
+    "grok-4.20-beta#4",
+    "grok-imagine-1.0", "grok-imagine-1.0-edit", "grok-imagine-1.0-fast",
+    "grok-imagine-1.0-video",
+]
+super_models = [
+    "grok-3", "grok-3-mini", "grok-3-thinking#4",
+    "grok-4", "grok-4-heavy#4", "grok-4-mini", "grok-4-thinking#4",
+    "grok-4.1-expert#4", "grok-4.1-fast", "grok-4.1-mini", "grok-4.1-thinking#4",
+    "grok-4.20-beta#4",
+    "grok-imagine-1.0", "grok-imagine-1.0-edit", "grok-imagine-1.0-fast",
+    "grok-imagine-1.0-video",
+]
+preferred_pool = "ssoSuper"
+basic_cool_duration_min = 240
+super_cool_duration_min = 120
+default_chat_quota = 999
+default_image_quota = 999
+default_video_quota = 999
+quota_recovery_mode = "auto"
+selection_algorithm = "high_quota_first"
