@@ -4,4 +4,8 @@ Download releases di tab [Releases](https://github.com/zanura7/GSTD-dist/release
 
 Current version: 2.0.6
 
-Windows build: `win-unpacked/GSTD.exe`
+Windows portable: `GSTD 2.0.6.exe`
+
+Windows installer: `GSTD Setup 2.0.6.exe`
+
+Unpacked build: `win-unpacked/GSTD.exe`

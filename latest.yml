@@ -1,0 +1,8 @@
+version: 2.0.6
+files:
+  - url: GSTD-Setup-2.0.6.exe
+    sha512: RQQIDv3nV7ull5XMAzva2uwMYOKyFtOjr0DK87eLH8gP7fJQLpZ6vDzdrm1rPiBjzboBv0r2FytOGoN2/3f1Jg==
+    size: 113159997
+path: GSTD-Setup-2.0.6.exe
+sha512: RQQIDv3nV7ull5XMAzva2uwMYOKyFtOjr0DK87eLH8gP7fJQLpZ6vDzdrm1rPiBjzboBv0r2FytOGoN2/3f1Jg==
+releaseDate: '2026-04-27T17:43:06.408Z'
